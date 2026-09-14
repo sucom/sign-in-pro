@@ -23,18 +23,19 @@
 ### On-Page Widget
 Access and auto-fill your credentials instantly through the injected floating widget.
 <br/>
-<img src="screens/screen-widget.png" alt="Sign In Credentials Widget" width="600" />
-<br/>
-<img src="screens/screen-widget-add.png" alt="Add Credentials" width="600" />
+<img src="screens/screen-widget.png?v=1.2.0" alt="Sign In Credentials Widget" width="600" />
+
+<br/><br/>
+<img src="screens/screen-widget-add.png?v=1.2.0" alt="Add Credentials" width="600" />
 
 ### Settings & Management
 Manage, export, and import your credentials from the intuitive options dashboard.
 <br/>
-<img src="screens/screen-options.png" alt="Options Page" width="600" />
+<img src="screens/screen-options.png?v=1.2.0" alt="Options Page" width="600" />
 
 ## 🚀 Installation
 
-Visit the [Chrome Web Store](https://chromewebstore.google.com/search/ABC+Academy) and install the extension.
+Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/sign-in-pro/jahkifdblpgngkphbnignoodidihgoio) and install the extension.
 
 ## 🛠️ Usage
 

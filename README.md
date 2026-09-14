@@ -24,6 +24,8 @@
 Access and auto-fill your credentials instantly through the injected floating widget.
 <br/>
 <img src="screens/screen-widget.png" alt="Sign In Credentials Widget" width="600" />
+<br/>
+<img src="screens/screen-widget-add.png" alt="Add Credentials" width="600" />
 
 ### Settings & Management
 Manage, export, and import your credentials from the intuitive options dashboard.

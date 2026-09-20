@@ -8,7 +8,7 @@
 
 ## 🌟 Overview
 
-**Sign In Pro** is a professional-grade Chrome extension designed to simplify your workflow when testing applications with multiple accounts. It provides a sleek, non-intrusive floating widget right on your webpage, allowing you to quickly manage and auto-fill login credentials without switching tabs or digging through standard password managers.
+**Sign In Pro** is a professional-grade Chrome, Edge, Firefox extension designed to simplify your workflow when testing applications with multiple accounts. It provides a sleek, non-intrusive floating widget right on your webpage, allowing you to quickly manage and auto-fill login credentials without switching tabs or digging through standard password managers.
 
 ## ✨ Features
 
@@ -36,7 +36,8 @@ Manage, export, and import your credentials from the intuitive options dashboard
 
 ## 🚀 Installation
 
-Visit the [Chrome Web Store](https://chromewebstore.google.com/search/ABC+Academy) and install the extension.
+Visit the [Chrome Web Store](https://chromewebstore.google.com/search/ABC+Academy) | [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/sign-in-pro/) and install the extension.
+
 
 ## 🛠️ Usage
 

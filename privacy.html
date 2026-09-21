@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Sign In Pro</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #334155;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #f8fafc;
-        }
-        h1 { color: #0f172a; margin-bottom: 8px; }
-        h2 { color: #1e293b; margin-top: 32px; padding-bottom: 8px; border-bottom: 1px solid #e2e8f0; }
-        .last-updated { color: #64748b; font-size: 0.9em; margin-bottom: 32px; }
-        .card {
-            background: white;
-            padding: 32px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Sign In Pro</title>
+  <link rel="icon" type="image/png" href="screens/icon128.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="card">
-        <h1>Privacy Policy</h1>
-        <div class="last-updated">Last Updated: September 2026</div>
 
-        <p>Your privacy is our absolute priority. The <strong>Sign In Pro</strong> browser extension was built specifically with data security in mind for developers and testers.</p>
-
-        <h2>1. Data Collection & Storage</h2>
-        <p><strong>We do not collect, transmit, or store any of your personal data on our servers.</strong> We do not run any analytics, tracking, or telemetry scripts.</p>
-        <p>All credentials, settings, and Vault Data you save using Sign In Pro are stored <strong>strictly locally</strong> within your own browser's sandboxed `chrome.storage.local` environment.</p>
-
-        <h2>2. Cloud Sync (Google Drive)</h2>
-        <p>If you choose to enable the optional "Cloud Sync" feature, the extension requests access to your personal Google Drive (`drive.appdata` and `userinfo.email` scopes). This functionality operates under the following strict conditions:</p>
-        <ul>
-            <li><strong>End-to-End Encryption:</strong> Your credentials are encrypted on your device using a Master Sync Password (AES-GCM encryption) <em>before</em> they ever leave your browser.</li>
-            <li><strong>Isolated Storage:</strong> The encrypted backup file is stored in a hidden, application-specific folder in your Google Drive. It is not accessible to other apps.</li>
-            <li><strong>Direct Connection:</strong> The extension communicates directly with the Google Drive API. No intermediary servers or third-party services are ever involved.</li>
-            <li><strong>Email Display:</strong> Your email address is only retrieved locally to display within the extension's Options page so you know which account is connected. It is never stored or transmitted elsewhere.</li>
-        </ul>
-
-        <h2>3. Permissions Explained</h2>
-        <ul>
-            <li><strong>storage:</strong> Required to save your encrypted credentials locally in your browser.</li>
-            <li><strong>activeTab:</strong> Required to inject the floating widget and autofill credentials only on the tab you actively interact with.</li>
-            <li><strong>identity:</strong> Required strictly to authenticate you with Google if you choose to use the Google Drive Cloud Sync feature.</li>
-        </ul>
-
-        <h2>4. Changes to this Policy</h2>
-        <p>If we update this privacy policy, we will post the changes on this page. Because we do not collect your email address, we cannot notify you directly.</p>
-
-        <h2>5. Limited Use Policy Compliance</h2>
-        <p>In accordance with the Chrome Web Store Limited Use Policy, we explicitly declare that your data is:</p>
-        <ul>
-            <li>Not being transferred or used for purposes that are unrelated to the item's core functionality.</li>
-            <li>Not being transferred or used to determine creditworthiness or for lending purposes.</li>
-            <li>Not being sold to third parties, outside of the <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use/" target="_blank">approved use cases</a>.</li>
-        </ul>
-
-        <h2>6. Contact</h2>
-        <p>If you have any questions about this Privacy Policy, please open an issue on our <a href="https://github.com/sucom/sign-in-pro/issues" target="_blank">GitHub Repository</a>.</p>
+  <nav class="navbar">
+    <a href="index.html" class="logo-container">
+      <img src="screens/icon128.png" alt="Sign In Pro Logo">
+      <span class="logo-text">Sign In Pro</span>
+    </a>
+    <div class="nav-links">
+      <a href="https://chromewebstore.google.com/detail/sign-in-pro/jahkifdblpgngkphbnignoodidihgoio" target="_blank" title="Install on Chrome Web Store">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg>
+      </a>
+      <a href="https://addons.mozilla.org/en-US/firefox/addon/sign-in-pro/" target="_blank" title="Install on Firefox Add-ons">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12s4.48 10 10 10c2.25 0 4.33-.74 5.99-1.99C15.3 19.38 13.52 18 12 18c-2.21 0-4-1.79-4-4 0-.96.34-1.85.91-2.55C10.14 10.39 12 11 12 11c1.33 0 2.53.58 3.36 1.5.15-.49.25-1 .25-1.5 0-2.21-1.79-4-4-4-1.28 0-2.42.6-3.15 1.54C6.54 10.19 5.5 12.02 5.5 14c0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.52-.06-1.03-.17-1.5z"></path></svg>
+      </a>
     </div>
+  </nav>
+
+  <div class="text-container">
+    <div class="text-card">
+      <h1>Privacy Policy</h1>
+      <div class="last-updated">Last Updated: September 2026</div>
+
+      <p>Your privacy is our absolute priority. The <strong>Sign In Pro</strong> browser extension was built specifically with data security in mind for developers and testers.</p>
+
+      <h2>1. Data Collection & Storage</h2>
+      <p><strong>We do not collect, transmit, or store any of your personal data on our servers.</strong> We do not run any analytics, tracking, or telemetry scripts.</p>
+      <p>All credentials, settings, and Vault Data you save using Sign In Pro are stored <strong>strictly locally</strong> within your own browser's sandboxed `chrome.storage.local` environment.</p>
+
+      <h2>2. Cloud Sync (Google Drive)</h2>
+      <p>If you choose to enable the optional "Cloud Sync" feature, the extension requests access to your personal Google Drive (`drive.appdata` and `userinfo.email` scopes). This functionality operates under the following strict conditions:</p>
+      <ul>
+        <li><strong>End-to-End Encryption:</strong> Your credentials are encrypted on your device using a Master Sync Password (AES-GCM encryption) <em>before</em> they ever leave your browser.</li>
+        <li><strong>Isolated Storage:</strong> The encrypted backup file is stored in a hidden, application-specific folder in your Google Drive. It is not accessible to other apps.</li>
+        <li><strong>Direct Connection:</strong> The extension communicates directly with the Google Drive API. No intermediary servers or third-party services are ever involved.</li>
+        <li><strong>Email Display:</strong> Your email address is only retrieved locally to display within the extension's Options page so you know which account is connected. It is never stored or transmitted elsewhere.</li>
+      </ul>
+
+      <h2>3. Permissions Explained</h2>
+      <ul>
+        <li><strong>storage:</strong> Required to save your encrypted credentials locally in your browser.</li>
+        <li><strong>activeTab:</strong> Required to inject the floating widget and autofill credentials only on the tab you actively interact with.</li>
+        <li><strong>identity:</strong> Required strictly to authenticate you with Google if you choose to use the Google Drive Cloud Sync feature.</li>
+      </ul>
+
+      <h2>4. Changes to this Policy</h2>
+      <p>If we update this privacy policy, we will post the changes on this page. Because we do not collect your email address, we cannot notify you directly.</p>
+
+      <h2>5. Limited Use Policy Compliance</h2>
+      <p>In accordance with the Chrome Web Store Limited Use Policy, we explicitly declare that your data is:</p>
+      <ul>
+        <li>Not being transferred or used for purposes that are unrelated to the item's core functionality.</li>
+        <li>Not being transferred or used to determine creditworthiness or for lending purposes.</li>
+        <li>Not being sold to third parties, outside of the <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use/" target="_blank">approved use cases</a>.</li>
+      </ul>
+
+      <h2>6. Contact</h2>
+      <p>If you have any questions about this Privacy Policy, please open an issue on our <a href="https://github.com/sucom/sign-in-pro/issues" target="_blank">GitHub Repository</a>.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="screens/icon128.png" alt="Sign In Pro Logo">
+        Sign In Pro
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html" target="_blank">Privacy Policy</a>
+        <a href="terms.html" target="_blank">Terms of Service</a>
+        <a href="https://github.com/sucom/sign-in-pro/issues" target="_blank">Support</a>
+      </div>
+      <div class="copyright">
+        &copy; 2026 Sign In Pro. All rights reserved.
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

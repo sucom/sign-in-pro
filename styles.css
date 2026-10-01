@@ -99,12 +99,20 @@ body {
   letter-spacing: -1px;
 }
 
-.hero h1 span {
-  background: linear-gradient(135deg, var(--primary), #3b82f6);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+.hero-accent span:nth-child(1) {
+  color: #047857;
+}
+
+.hero-accent span:nth-child(2) {
+  color: #0f766e;
+}
+
+.hero-accent span:nth-child(3) {
+  color: #0369a1;
+}
+
+.hero-accent span:nth-child(4) {
+  color: #1d4ed8;
 }
 
 .hero-subtitle {

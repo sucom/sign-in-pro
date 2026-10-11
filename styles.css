@@ -42,6 +42,14 @@ body {
   text-decoration: none;
 }
 
+.logo-container-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: white;
+}
+
 .logo-container img {
   width: 40px;
   height: 40px;

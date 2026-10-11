@@ -63,7 +63,7 @@ Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/sign-in-pr
 
 ## ⚖️ License
 
-MIT License.
+[EULA](https://sucom.github.io/sign-in-pro/license.html)
 
 
 

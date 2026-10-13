@@ -40,11 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const togglePwdBtn = document.getElementById('toggle-pwd');
 
     const validRoles = {
-      'owner@app-demo.com': '/owner',
-      'admin@app-demo.com': '/admin',
-      'approver@app-demo.com': '/approver',
-      'user1@app-demo.com': '/user1',
-      'user2@app-demo.com': '/user2'
+      'owner@app-demo.com': 'owner/index.html',
+      'admin@app-demo.com': 'admin/index.html',
+      'approver@app-demo.com': 'approver/index.html',
+      'user1@app-demo.com': 'user1/index.html',
+      'user2@app-demo.com': 'user2/index.html'
     };
 
     nextBtn.addEventListener('click', (e) => {
@@ -67,11 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
       let redirectPage = validRoles[email];
       
       if (!redirectPage) {
-        if (email.startsWith('owner')) redirectPage = '/owner';
-        else if (email.startsWith('admin')) redirectPage = '/admin';
-        else if (email.startsWith('approver')) redirectPage = '/approver';
-        else if (email.startsWith('user1')) redirectPage = '/user1';
-        else if (email.startsWith('user2')) redirectPage = '/user2';
+        if (email.startsWith('owner')) redirectPage = 'owner/index.html';
+        else if (email.startsWith('admin')) redirectPage = 'admin/index.html';
+        else if (email.startsWith('approver')) redirectPage = 'approver/index.html';
+        else if (email.startsWith('user1')) redirectPage = 'user1/index.html';
+        else if (email.startsWith('user2')) redirectPage = 'user2/index.html';
         else {
           emailErrorMsg.textContent = 'Invalid email address.';
           emailFormGrp.classList.add('has-error');
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      const redirectUrl = sessionStorage.getItem('demoRedirectUrl') || '/owner';
+      const redirectUrl = sessionStorage.getItem('demoRedirectUrl') || 'owner/index.html';
       window.location.href = redirectUrl;
     });
   }
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         sessionStorage.removeItem('demoEmail');
         sessionStorage.removeItem('demoRedirectUrl');
-        window.location.href = '/';
+        window.location.href = '../index.html';
       });
     }
   }

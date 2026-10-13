@@ -4,7 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Owner Dashboard - Demo Budget Management</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('demoTheme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+    })();
+  </script>
 </head>
 <body>
   <div class="dashboard-layout">
@@ -89,6 +97,6 @@
       </div>
     </main>
   </div>
-  <script src="/js/app.js"></script>
+  <script src="../js/app.js"></script>
 </body>
 </html>

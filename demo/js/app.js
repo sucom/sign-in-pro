@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
   
-  const currentTheme = localStorage.getItem('demoTheme') || 'light';
+  const currentTheme = localStorage.getItem('demoTheme') || 'dark';
   applyTheme(currentTheme);
 
   const themeToggleBtns = document.querySelectorAll('#themeToggleBtn, [data-theme-toggle]');

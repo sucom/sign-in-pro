@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +7,14 @@
   <link rel="stylesheet" href="css/style.css">
   <script>
     (function () {
-      const savedTheme = localStorage.getItem('demoTheme');
-      if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-      }
+      const savedTheme = localStorage.getItem('demoTheme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
     })();
   </script>
 </head>
 <body>
   <div class="theme-toggle-wrapper">
-    <button type="button" class="theme-toggle-switch" id="themeToggleBtn" role="switch" aria-checked="false" aria-label="Toggle dark/light theme" title="Toggle dark/light theme">
+    <button type="button" class="theme-toggle-switch" id="themeToggleBtn" role="switch" aria-checked="true" aria-label="Toggle dark/light theme" title="Toggle dark/light theme">
       <span class="theme-track-icon sun" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="4"></circle>

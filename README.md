@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="screens_v5/icon128.png" alt="Sign In Pro Logo" width="128" />
+  <img src="https://sucom.github.io/sign-in-pro/media/icon128.png" alt="Sign In Pro Logo" width="128" />
   <h1>Sign In Pro</h1>
-  <p>The ultimate in-page Sign In Credentials manager tailored for developers and testers.</p>
+  <p>The ultimate in-page 1-Click Sign In manager</p>
 </div>
 
 ---
@@ -18,29 +18,6 @@
 - **🎨 Modern UI:** A beautiful, responsive, and intuitive interface injected directly into the Shadow DOM to avoid styling conflicts.
 - **🔒 Local Storage:** Your credentials are saved directly within your browser's local extension storage.
 
-## 📸 Screenshots
-
-### On-Page Widget
-Access and auto-fill your credentials instantly through the injected floating widget.
-<br/>
-<img src="screens_v5/screen-01-1280x800-widget-list.png" alt="Sign In Credentials Widget" width="600" />
-<br/>
-<img src="screens_v5/screen-02-1280x800-widget-add-edit.png" alt="Sign In Credentials Widget" width="600" />
-<br/>
-<img src="screens_v5/screen-03-1280x800-widget-import.png" alt="Sign In Credentials Widget" width="600" />
-<br/>
-<img src="screens_v5/screen-06-1280x800-widget-locked.png" alt="Sign In Credentials Widget" width="600" />
-
-### Settings & Management
-Manage, export, and import your credentials from the intuitive options dashboard.
-<br/>
-<img src="screens_v5/screen-05-1280x800-options-sec.png" alt="Options Page" width="600" />
-<br/>
-<img src="screens_v5/screen-07-1280x800-options-cred-locked.png" alt="Options Page" width="600" />
-<br/>
-<img src="screens_v5/screen-04-1280x800-options-cred.png" alt="Options Page" width="600" />
-<br/>
-<img src="screens_v5/screen-08-1280x800-options-cred-gdrive.png" alt="Options Page" width="600" />
 ## 🚀 Installation
 
 Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/sign-in-pro/jahkifdblpgngkphbnignoodidihgoio) | [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/sign-in-pro/) and install the extension.
@@ -53,7 +30,11 @@ Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/sign-in-pr
 3. Click on a saved credential to auto-fill the login form.
 4. Right-click the extension icon and select **Options** to manage or export your credentials.
 
-## ⚖️ Privacy
+## 🏚️ Home
+
+[Sign In Pro](https://sucom.github.io/sign-in-pro/)
+
+## 🔐 Privacy
 
 [Privacy](https://sucom.github.io/sign-in-pro/privacy.html)
 
@@ -64,6 +45,3 @@ Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/sign-in-pr
 ## ⚖️ License
 
 [EULA](https://sucom.github.io/sign-in-pro/license.html)
-
-
-
